@@ -1,0 +1,103 @@
+.section-phase
+  background: linear-gradient(180deg, #1E5155 0%, #6F8D8D 100%)
+.phase
+  padding-top: 40px
+  padding-bottom: 65px
+  &-img
+    margin-right: 40px
+  &-green
+    text-align: center
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 105px
+    line-height: 100%
+    color: #018BB2
+    background-image: url(../img/phase/background.png)
+    padding-top: 110px
+    padding-bottom: 710px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+  &-title
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 80px
+    line-height: 100%
+    color: #FFFFFF
+    margin-bottom: 40px
+    text-align: center
+  &-block
+    display: flex
+    justify-content: center
+    align-items: flex-start
+  &-part
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-item
+    display: flex
+    align-items: center
+    margin-bottom: 50px
+    &__number
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: 400
+      font-size: 50px
+      line-height: 100%
+      color: #FFFFFF
+      margin-right: 40px
+    &__text
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: 400
+      font-size: 22px
+      line-height: 116%
+      color: #FFFFFF
+      max-width: 520px
+
+@media (max-width: 1500px)
+  .phase
+     &-block
+       justify-content: center
+     &-img
+       margin-right: 40px
+
+@media (max-width: 1200px)
+  .phase
+    padding-top: 30px
+    padding-bottom: 30px
+    &-green
+      font-size: 30px
+      padding-top: 30px
+      padding-bottom: 440px
+    &-img
+      margin-right: 30px
+      width: 345px
+      height: 365px
+    &-title
+      font-size: 30px
+      margin-bottom: 30px
+    &-item
+      margin-bottom: 20px
+      &__number
+        font-size: 25px
+        margin-right: 20px
+      &__text
+        font-size: 18px
+
+@media (max-width: 800px)
+  .phase
+    &-block
+      flex-direction: column-reverse
+      align-items: center
+    &-img
+      margin-right: 0px
+      width: 100%
+      height: auto
+    &-item
+      margin-bottom: 30px
+      align-items: flex-start
+      &__number
+        margin-right: 10px

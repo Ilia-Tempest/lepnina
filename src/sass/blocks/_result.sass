@@ -1,0 +1,114 @@
+.section-result
+  padding-top: 65px
+  padding-bottom: 65px
+.result
+  &-mobile
+    display: none
+  &-title
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 45px
+    line-height: 46px
+    color: #000000
+    margin-bottom: 20px 
+    &__black
+      color: #C7B47B
+  &-text
+     font-family: "Open Sans", sans-serif
+     font-style: normal
+     font-weight: 400
+     font-size: 22px
+     line-height: 25px
+     color: #000000
+  &-block
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 1051px
+    margin: auto
+    border-top: 1px solid #C4C4C4
+    padding-top: 10px
+    &__color
+      color: #7AAD5A
+    &__title
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: 400
+      font-size: 45px
+      line-height: 100%
+      color: #000000
+      align-self: flex-start
+      margin-bottom: 10px
+      margin-top: 110px
+  &-green
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+    &__text
+      background: #E4EBC9;
+      border: 1px solid #7AAD5A;
+      box-sizing: border-box;
+      padding-top: 30px
+      padding-bottom: 30px
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: 600
+      font-size: 28px
+      line-height: 78.5%
+      color: #7AAD5A
+      width: 1021px
+      text-align: center
+      align-self: flex-end
+  &-blue
+    margin-bottom: 95px
+  &-logo
+    align-self: flex-end
+    margin-bottom: 45px
+
+@media (max-width: 1100px)
+  .section-result 
+    padding-top: 50px
+    padding-bottom: 50px
+  .result
+    &-green
+      &__text
+        width: 97.3%
+        font-size: 18px
+    &-title
+      font-size: 30px
+    &-text
+      font-size: 18px
+    &-block
+      &__title
+        margin-top: 50px
+        font-size: 30px
+    &-blue
+      margin-bottom: 25px
+
+@media (max-width: 640px)
+  .section-result
+    padding-top: 30px
+  .result
+    &-mobile
+      display: inline-block
+    &-logo
+      margin-bottom: 50px
+    &-block
+      &__title
+        margin-top: 30px
+      &__static
+        display: none
+    &-green
+      &__bold
+        font-weight: 600
+      &__text
+        padding-top: 20px
+        padding-bottom: 20px
+        margin-top: 30px
+        font-weight: 500
+        line-height: 24px
+        max-width: 260px
+        padding-right: 20px
+        padding-left: 20px
+      

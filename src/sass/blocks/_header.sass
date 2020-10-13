@@ -1,0 +1,237 @@
+.header
+  &-mobile
+    display: none
+  &-top
+    padding-top: 15px
+    background: #EBEEE8
+    padding-bottom: 10px
+    &__block
+      display: flex
+      justify-content: space-between
+      align-items: center
+    &__title
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 54px
+      color: #000000
+    &__bold
+      font-weight: 400
+  &-hero
+    background-image: url(../img/header/background.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &-one
+    background: linear-gradient(270deg, #0995B3 11.81%, rgba(255, 255, 255, 0) 100%), rgba(9, 149, 179, 0.6)
+    width: 50%
+    padding-bottom: 27px
+    padding-top: 65px
+    display: flex
+    flex-direction: column
+    align-self: flex-end
+    &__mobile
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 50px
+      line-height: 130%
+      color: #FFFFFF
+      padding-bottom: 15px
+      margin-left: 120px
+    &__social
+      display: flex
+      align-items: center
+      margin-left: 120px
+    &__a
+      margin-right: 15px
+      &:last-child
+        margin-right: 0px
+  &-two
+    background: linear-gradient(84.76deg, #834853 14.08%, #B12A3B 45.61%, #D77238 100%)
+    padding-top: 35px
+    padding-bottom: 35px
+    width: 50%
+    &__text
+      display: flex
+      flex-direction: column
+      align-items: flex-start
+      max-width: 436px
+      margin: auto
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: 400
+      font-size: 22px
+      line-height: 123.5%
+      color: #FFFFFF
+    &__bold
+      font-weight: 600
+  &-three
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 50px
+    line-height: 100%
+    color: #FFFFFF
+    padding: 24px 130px
+    background: linear-gradient(90deg, #027184 48.99%, #1D4248 103.43%)
+    cursor: pointer
+    align-self: flex-end
+    margin-right: 180px
+    text-align: center
+  &-four
+    align-self: flex-end
+    width: 50%
+    padding-top: 42px
+    padding-bottom: 42px
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 50px
+    line-height: 100%
+    color: #000000
+    background: #E7CF89
+    text-align: center
+    cursor: pointer
+  &-menu
+    padding-top: 60px
+    padding-bottom: 30px
+    background: rgba(235, 237, 224, 0.8)
+    width: 100%
+  &-nav
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+    background: #038EB9
+    padding-top: 12px
+    padding-bottom: 12px
+    &__a
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: 300
+      font-size: 27px
+      line-height: 130%
+      color: #FFFFFF
+
+@media (max-width: 1200px)
+  .header
+    &-top
+      &__title
+        font-size: 35px
+    &-nav
+      &__a
+        font-size: 23px
+
+@media (max-width: 1030px)
+  .header
+    &-top
+      padding-top: 40px
+      padding-bottom: 40px
+    &-desk
+      display: none
+    &-mobile
+      display: inline-block
+    &-two
+      &__text 
+        font-size: 18px
+        margin-left: 20px
+    &-three
+      font-size: 30px
+      margin-right: 20px
+    &-four
+      font-size: 30px
+    &-one
+      padding-top: 55px
+      padding-bottom: 55px
+      &__mobile
+        font-size: 30px
+        margin-left: 15px
+      &__social
+        margin-left: 15px
+    &-menu
+      padding-top: 50px
+      padding-bottom: 0px
+    &-nav
+      align-items: center
+      flex-direction: column
+      padding-top: 30px
+      padding-bottom: 30px
+      &__a
+        margin-top: 30px
+        &:first-child
+          margin-top: 0px
+
+@media (max-width: 800px)
+  .header
+    &-two
+      &__text
+        margin-right: 20px
+    &-top
+      &__title
+        font-size: 30px
+
+@media (max-width: 640px)
+  .header
+    &-nav
+      padding-top: 15px
+      padding-bottom: 15px
+      &__a
+        margin-top: 25px
+    &-top
+      padding-top: 50px
+      padding-bottom: 30px
+      &__title
+        font-size: 25px
+        text-align: center
+      &__logo
+        margin-bottom: 30px
+      &__block
+        flex-direction: column-reverse
+        align-items: center
+    &-hero
+      background-size: contain
+    &-one
+      width: 100%
+      padding-top: 30px
+      padding-bottom: 30px
+      background: linear-gradient(270.49deg, rgba(9, 149, 179, 0.8) 0.28%, rgba(109, 192, 210, 0.8) 99.46%)
+      &__mobile
+        margin-left: 0px
+        text-align: center
+      &__social
+        margin-left: 0px
+        justify-content: center
+    &-two
+      width: 100%
+      padding-top: 20px
+      padding-bottom: 20px
+      &__text
+        margin-left: 0px
+        margin-right: 0px
+        align-items: center
+        margin: auto
+        text-align: center
+    &-three
+      width: 100%
+      margin-right: 0px
+      padding-left: 0px
+      padding-right: 0px
+      padding-top: 35px
+      padding-bottom: 35px
+    &-four
+      width: 100%
+      padding-top: 35px
+      padding-bottom: 35px
+
+@media (max-width: 450px)
+   .header
+    &-nav
+      padding-top: 15px
+      padding-bottom: 15px
+      align-items: flex-start
+      padding-left: 15px
+      &__a
+        margin-top: 15px
+        font-size: 25px
