@@ -6,6 +6,102 @@ a
 h1
   margin-top: 0px
   margin-bottom: 0px
+.menu-text
+  margin-top: 30px
+  display: flex
+  align-items: center
+  font-family: "Open Sans", sans-serif
+  font-style: normal
+  font-weight: 400
+  font-size: 18px
+  line-height: 25px
+  color: #000000
+  &__title
+    color: #000000
+  &__main
+    opacity: 0.4
+    color: #000000
+.price
+  &-price
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 30px
+    line-height: 100%
+    color: #000000
+  &-bold
+    font-weight: 600
+  &-text
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 300
+    font-size: 30px
+    line-height: 100%
+    color: #000000
+    margin-left: 20px
+  &-title
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 35px
+    line-height: 130%
+    color: #7AAD5A
+    margin-bottom: 30px
+    margin-top: 50px
+  &-table
+    display: flex
+    flex-direction: column
+    align-items: center
+  &-col
+    display: flex
+    justify-content: space-between
+    width: 100%
+  &-item
+    border: 1px solid #000000
+    width: 50%
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 15px
+    padding-bottom: 15px
+    &__bottom
+      border-bottom: 0px
+    &__right
+      border-right: 0px
+    &__title
+      font-family: "Open Sans", sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 30px
+      line-height: 100%
+      color: #000000
+.cooperation
+  &-subtitle
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 30px
+    line-height: 100%
+    color: #000000
+    text-align: center
+    margin-bottom: 30px
+  &-text
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 22px
+    line-height: 24px
+    color: #000000
+  &-title
+    margin-top: 50px
+    margin-bottom: 50px
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 35px
+    line-height: 130%
+    color: #CAB063
 .container
   max-width: 1053px
   margin: auto
@@ -13,6 +109,67 @@ h1
   &-main
     margin: auto
     width: 80%
+  &-menu
+    margin: auto
+    width: 90%
+
 @media (max-width: 1030px)
+  .price
+    &-title
+      font-size: 30px
+    &-img
+      width: 250px
+    &-item
+      flex-direction: column-reverse
+      &__title
+        font-size: 25px
+    &-price
+      font-size: 25px
+    &-text
+      font-size: 25px
+      margin-left: 0px
+      margin-bottom: 15px
+  .cooperation
+    &-title
+      font-size: 30px
+    &-subtitle
+      font-size: 25px
+      margin-bottom: 20px
+    &-text
+      font-size: 18px
+  .menu-text
+    display: none
   .container
     width: 90%
+
+@media (max-width: 640px)
+  .price-title
+    font-size: 25px
+    margin-bottom: 12px
+    margin-top: 30px
+  .price
+    &-img
+      width: 150px
+    &-item
+      &__title
+        font-size: 16px
+    &-price
+      font-size: 16px
+    &-text
+      font-size: 16px
+      margin-bottom: 10px
+
+  .cooperation
+    &-title
+      margin-top: 30px
+      margin-bottom: 30px
+      font-size: 25px
+    &-text
+      font-size: 18px
+    &-subtitle
+      font-size: 25px
+
+@media (max-width: 340px)
+  .price
+    &-img
+      width: 130px

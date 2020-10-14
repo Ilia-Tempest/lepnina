@@ -100,6 +100,10 @@
     padding-bottom: 30px
     background: rgba(235, 237, 224, 0.8)
     width: 100%
+    &__all
+      padding-top: 0px
+      padding-bottom: 0px
+      background: none
   &-nav
     display: flex
     justify-content: space-around
@@ -114,6 +118,9 @@
       font-size: 27px
       line-height: 130%
       color: #FFFFFF
+      &-active
+        padding-bottom: 5px
+        border-bottom: 2px solid #FFFFFF
 
 @media (max-width: 1200px)
   .header
@@ -131,8 +138,6 @@
       padding-bottom: 40px
     &-desk
       display: none
-    &-mobile
-      display: inline-block
     &-two
       &__text 
         font-size: 18px
@@ -153,13 +158,41 @@
     &-menu
       padding-top: 50px
       padding-bottom: 0px
+    &-mobile
+      display: inline-block
+      &__all
+        padding-top: 0px
     &-nav
       align-items: center
       flex-direction: column
-      padding-top: 30px
+      padding-top: 0px
       padding-bottom: 30px
+      position: relative
+      &__cursor
+        position: absolute
+        right: 40px
+        top: 45px
+        cursor: pointer
+        &-active
+          transform: rotate(180deg);
+      &__all
+        padding-top: 0px
+        padding-bottom: 0px
       &__a
         margin-top: 30px
+        font-size: 30px
+      &__part
+        padding-bottom: 30px
+        display: none
+        cursor: pointer
+        width: 100%
+        text-align: center
+        &-actives
+          display: inline-block
+        &-active
+          display: inline-block
+          cursor: pointer
+          padding-top: 30px
         &:first-child
           margin-top: 0px
 
@@ -175,10 +208,22 @@
 @media (max-width: 640px)
   .header
     &-nav
-      padding-top: 15px
+      padding-top: 0px
       padding-bottom: 15px
+      &__all
+        padding-top: 15px
+        padding-bottom: 0px
+      &__cursor
+        top: 30px
+        right: 16px
+      &__part
+        &-active
+          padding-top: 0px
+          padding-bottom: 15px
+        &-actives
+          padding-bottom: 15px
       &__a
-        margin-top: 25px
+        margin-top: 15px
     &-top
       padding-top: 50px
       padding-bottom: 30px
@@ -228,10 +273,18 @@
 @media (max-width: 450px)
    .header
     &-nav
-      padding-top: 15px
+      padding-top: 0px
       padding-bottom: 15px
       align-items: flex-start
       padding-left: 15px
+      &__cursor
+        top: 25px
+      &__all
+        padding-top: 11px
+      &__part
+        text-align: left
+      &__all
+        padding-bottom: 0px
       &__a
         margin-top: 15px
         font-size: 25px
