@@ -364,6 +364,107 @@ h1 {
   margin-top: 30px;
 }
 
+.section-service {
+  margin-top: 50px;
+}
+
+.service-block__info {
+  display: block;
+}
+
+.service-block__mobile {
+  display: none;
+}
+
+.service-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #018BB2;
+  margin-bottom: 30px;
+}
+
+.service-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
+}
+
+.service-item__one {
+  margin-left: 20px;
+}
+
+.service-item__two {
+  margin-right: 20px;
+}
+
+.service-item:last-child {
+  margin-bottom: 0px;
+}
+
+.service-item__img {
+  width: 50%;
+}
+
+.service-item__img img {
+  width: 100%;
+}
+
+.service-item__block {
+  width: 50%;
+}
+
+.service-item__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  color: #B0A368;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.service-item__text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 124%;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.service-info__mobile {
+  display: none;
+}
+
+.service-info__title {
+  margin-bottom: 60px;
+}
+
+.service-info__item {
+  margin-bottom: 30px;
+}
+
+.service-info__items {
+  width: 35%;
+}
+
+.service-info__img {
+  width: 65%;
+}
+
 .comment-title {
   font-family: "Open Sans", sans-serif;
   text-align: center;
@@ -613,6 +714,34 @@ h1 {
 }
 
 @media (max-width: 1030px) {
+  .service-title {
+    font-size: 30px;
+  }
+  .service-item__one {
+    margin-left: 30px;
+  }
+  .service-item__two {
+    margin-right: 30px;
+  }
+  .service-item__title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .service-item__text {
+    font-size: 18px;
+  }
+  .service-info__title {
+    margin-bottom: 30px;
+  }
+  .service-info__item {
+    margin-bottom: 30px;
+  }
+  .service-info__items {
+    width: auto;
+  }
+  .service-info__img {
+    width: 55%;
+  }
   .comment-item {
     margin-right: 20px;
     padding-top: 30px;
@@ -675,6 +804,90 @@ h1 {
 }
 
 @media (max-width: 640px) {
+  .section-service {
+    margin-top: 30px;
+  }
+  .service-block {
+    display: none;
+  }
+  .service-block__info {
+    display: block;
+  }
+  .service-block__mobile {
+    display: inline-block;
+  }
+  .service-title {
+    font-size: 25px;
+  }
+  .service-item {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .service-item__1 {
+    background-image: url(../img/service/mobile-one.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .service-item__2 {
+    background-image: url(../img/service/mobile-two.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .service-item__3 {
+    background-image: url(../img/service/mobile-three.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .service-item__4 {
+    background-image: url(../img/service/mobile-four.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .service-item__5 {
+    background-image: url(../img/service/mobile-five.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .service-item__6 {
+    background-image: url(../img/service/mobile-six.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .service-item__one {
+    margin-left: 0px;
+  }
+  .service-item__two {
+    margin-right: 0px;
+  }
+  .service-item__img {
+    display: none;
+  }
+  .service-item__block {
+    width: 90%;
+    margin: auto;
+  }
+  .service-info__item {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .service-info__items {
+    margin: 0;
+  }
+  .service-info__titles {
+    margin-bottom: 0px;
+  }
+  .service-info__mobile {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+  }
   .section-contact {
     margin-top: 30px;
   }
@@ -2495,6 +2708,11 @@ h1 {
   background: #CAB063;
   margin-bottom: 60px;
   cursor: pointer;
+}
+
+.footer-button__service {
+  background: -webkit-gradient(linear, left top, right top, color-stop(48.99%, #027184), color-stop(103.43%, #1D4248));
+  background: linear-gradient(90deg, #027184 48.99%, #1D4248 103.43%);
 }
 
 .footer-button__contact {

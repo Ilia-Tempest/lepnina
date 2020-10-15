@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Монтаж декора | Наши цены</title>
+  <title>Монтаж декора | Информация по услуге</title>
   <link rel="shortcut icon" href="img/favicon.ico">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,7 +30,7 @@
       <nav class="header-nav">
         <a href="about.html" class="header-nav__a">О НАС</a>
         <!-- /.header-a -->
-        <a href="service.html" class="header-nav__a">УСЛУГИ</a>
+        <a href="service.html" class="header-nav__a header-nav__a-active">УСЛУГИ</a>
         <!-- /.header-a -->
         <a href="comment.html" class="header-nav__a">ОТЗЫВЫ</a>
         <!-- /.header-a -->
@@ -40,7 +40,7 @@
         <!-- /.header-a -->
         <a href="cooperation.html" class="header-nav__a">СОТРУДНИЧЕСТВО</a>
         <!-- /.header-a -->
-        <a href="price.html" class="header-nav__a header-nav__a-active">НАШИ ЦЕНЫ</a>
+        <a href="price.html" class="header-nav__a">НАШИ ЦЕНЫ</a>
         <!-- /.header-a -->
       </nav>
       <!-- /.header-nav -->
@@ -53,21 +53,25 @@
       <img src="img/header/cursor.svg" alt="" class="header-nav__cursor">
 
       <div class="header-nav__part header-nav__part-active">
+        <a href="service.html" class="header-nav__a">УСЛУГИ</a>
+        <!-- /.header-a -->
+      </div>
+      <!-- /.header-nav__part -->
+
+<div class="header-nav__part">
         <a href="price.html" class="header-nav__a">НАШИ ЦЕНЫ</a>
         <!-- /.header-a -->
       </div>
       <!-- /.header-nav__part -->
+  
+      <div class="header-nav__part">
+        <a href="comment.html" class="header-nav__a">ОТЗЫВЫ</a>
+        <!-- /.header-a -->
+      </div>
+      
     
     <!-- /.header-nav__part -->
-    <div class="header-nav__part">
-      <a href="service.html" class="header-nav__a">УСЛУГИ</a>
-      <!-- /.header-a -->
-    </div>
-    <!-- /.header-nav__part -->
-    <div class="header-nav__part">
-      <a href="comment.html" class="header-nav__a">ОТЗЫВЫ</a>
-      <!-- /.header-a -->
-    </div>
+
     <!-- /.header-nav__part -->
     <div class="header-nav__part">
       <a href="" class="header-nav__a">ПОРТФОЛИО</a>
@@ -90,21 +94,35 @@
       <a class="header-nav__a" href="about.html">О НАС</a>
       <!-- /.header-a -->
     </div>
+
+
+
+   
+
+
+
+
     </nav>
     <!-- /.header-nav -->
   </div>
  <!-- /.header-menu -->
    
+
+
  <div class="menu-text">
   <div class="container-menu">
    <a href="index.html" class="menu-text__title menu-text__main">
      Главная
    </a> <!-- /.menu-text__main -->
    <img class="menu-img" src="img/about/cursor.svg" alt="">
-   <a href="price.html" class="menu-text__title menu-text__about">
-   Наши цены
+   <a href="service.html" class="menu-text__title menu-text__main">
+   Услуги
    </a> 
    <!-- /.menu-text__about -->
+   <img class="menu-img" src="img/about/cursor.svg" alt="">
+   <a href="service-info.html" class="menu-text__title menu-text__about">
+    Художественная роспись
+    </a> 
   </div>
   <!-- /.container-menu -->
  </div>
@@ -117,91 +135,61 @@
 
 
 <main class="main">
-  <section class="section section-price">
-    <div class="price">
-      <div class="container-menu">
-        <div class="price-block">
-          <div class="price-title">
-            НАШИ ЦЕНЫ
-          </div>
-          <!-- /.price-title -->
-        <div class="price-table">
-          <div class="price-col">
-            <div class="price-item price-item__right price-item__bottom">
-              <span class="price-item__title">
-                Наименование услуги
-              </span> <!-- /.price-item__title -->
-            </div>
-            <!-- /.price-item -->
-            <div class="price-item price-item__bottom">
-              <span class="price-item__title">
-                Стоимость
-              </span> <!-- /.price-item__title -->
-            </div>
-            <!-- /.price-item -->
-          </div>
-          <!-- /.price-col -->
-          <div class="price-col">
-            <div class="price-item price-item__right price-item__bottom">
-              <img src="img/price/price.png" alt="" class="price-img"><span class="price-text">Карниз гладкий</span> <!-- /.price-text -->
-            </div>
-            <!-- /.price-item -->
-            <div class="price-item price-item__bottom">
-              <div class="price-price">
-                 От
-                <span class="price-bold">700 ₽.</span> 
-                <!-- /.price-bold -->
-            </div>
-              <!-- /.price-price -->
-            </div>
-            <!-- /.price-item -->
-          </div>
-          <!-- /.price-col -->
-          <div class="price-col">
-            <div class="price-item price-item__right price-item__bottom">
-              <img src="img/price/price.png" alt="" class="price-img"><span class="price-text">Карниз гладкий</span> <!-- /.price-text --></div>
-            <!-- /.price-item -->
-            <div class="price-item price-item__bottom">
-              <div class="price-price">
-                От
-               <span class="price-bold">900 ₽.</span> 
-               <!-- /.price-bold -->
+  <section class="section section-service">
+   <div class="service">
+     <div class="container-menu">
+       <div class="service-title service-info__title">УСЛУГИ</div>
+       <!-- /.service-title -->
+       <div class="service-block service-block__info">
+         <div class="service-item service-info__item">
+           <img src="img/service/service-info.png" alt="" class="service-item__img service-info__img">
+           <div class="service-item__block service-item__one service-info__items">
+             <div class="service-item__title service-info__titles">
+              ХУДОЖЕСТВЕННАЯ РОСПИСЬ
+             </div>
+             <!-- /.service-item__title -->
+           
            </div>
-             <!-- /.price-price -->
+           <!-- /.service-item__block -->
+         </div>
+         <!-- /.service-item -->
+        <div class="service-info__item__txt">
+          <div class="service-item__text">
+            Если между деталями образуется стык, то он тщательно и аккуратно затирается гипсом. Если предстоит производить монтаж элементов декора из гипса. В оценке важна даже самая малая деталь, так как любая упущенная мелочь может привести к тому, что украшение не будет смотреться так, как это было запланировано.
             </div>
-            <!-- /.price-item -->
+          <!-- /.service-item__text -->
+          <div class="service-item__text">
+            В оценке важна даже самая малая деталь, так как любая упущенная мелочь может привести к тому, что украшение не будет смотреться так, как это было запланировано. Если между деталями образуется стык, то он тщательно и аккуратно затирается гипсом. Если предстоит производить монтаж элементов декора из гипса. В оценке важна даже самая малая деталь, так как любая упущенная мелочь может привести к тому, что украшение не будет смотреться так, как это было запланировано.
           </div>
-          <!-- /.price-col -->
-          <div class="price-col">
-            <div class="price-item price-item__right"><img src="img/price/price.png" alt="" class="price-img"><span class="price-text">Карниз гладкий</span> <!-- /.price-text --></div>
-            <!-- /.price-item -->
-            <div class="price-item">
-              <div class="price-price">
-                От
-               <span class="price-bold">800 ₽.</span> 
-               <!-- /.price-bold -->
-           </div>
-             <!-- /.price-price -->
-            </div>
-            <!-- /.price-item -->
+          <!-- /.service-item__text -->
+          <div class="service-item__text">
+            Если между деталями образуется стык, то он тщательно и аккуратно затирается гипсом. Если предстоит производить монтаж элементов декора из гипса. В оценке важна даже самая малая деталь, так как любая упущенная мелочь может привести к тому, что украшение не будет смотреться так, как это было запланировано.
           </div>
-          <!-- /.price-col -->
+          <!-- /.service-item__text -->
         </div>
-        <!-- /.price-table -->
+        <!-- /.service-item -->
+       </div>
+       <!-- /.service-block -->
+     </div>
+     <!-- /.container-menu -->
 
-        </div>
-        <!-- /.price-block -->
-      </div>
-      <!-- /.container-menu -->
-    </div>
-    <!-- /.price -->
+     
+
+
+
+
+  <img src="img/service/service-info.png" alt="" class="service-info__mobile">
+
+
+   </div>
+   <!-- /.service -->
   </section>
-  <!-- /.section section-price -->
+  <!-- /.section section-service -->
 </main>
 <!-- /.main -->
 
-  <footer class="footer footer-all footer-price">
-    <div class="footer-button footer-button__price">
+  <footer class="footer footer-all footer-comment">
+    <div class="footer-button footer-button__service">
       ЗАДАТЬ ВОПРОС
     </div>
     <!-- /.footer-button footer-button__about -->
@@ -241,6 +229,9 @@
   <!-- /.footer -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/menu.js"></script>
+  <script src="js/comment-slider.js"></script>
+  
 </body>
 </html>
