@@ -75,6 +75,7 @@ pre {
  */
 a {
   background-color: transparent;
+  outline: none;
 }
 
 /**
@@ -366,6 +367,82 @@ h1 {
 
 .section-service {
   margin-top: 50px;
+}
+
+.section-port {
+  margin-top: 50px;
+}
+
+.port-texts {
+  margin-top: 30px;
+}
+
+.port-info__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.port-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  color: #C13948;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.port-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 20px;
+}
+
+.port-item:last-child {
+  margin-right: 0px;
+}
+
+.port-items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.port-item__title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  outline: none;
+}
+
+.port-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 5px;
 }
 
 .service-block__info {
@@ -714,6 +791,37 @@ h1 {
 }
 
 @media (max-width: 1030px) {
+  .port-titless {
+    text-align: left;
+  }
+  .port-info__title {
+    font-size: 25px;
+  }
+  .port-title {
+    font-size: 30px;
+  }
+  .port-item {
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    padding-bottom: 15px;
+    margin-right: 30px;
+  }
+  .port-item__title {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    padding-left: 15px;
+  }
+  .port-text {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+  }
+  .port-items {
+    -webkit-box-shadow: 0px;
+            box-shadow: 0px;
+    padding-bottom: 0px;
+  }
   .service-title {
     font-size: 30px;
   }
@@ -804,8 +912,26 @@ h1 {
 }
 
 @media (max-width: 640px) {
+  .section-port {
+    margin-top: 30px;
+  }
   .section-service {
     margin-top: 30px;
+  }
+  .port-info__title {
+    margin-bottom: 20px;
+  }
+  .port-item {
+    margin-right: 20px;
+    padding-bottom: 40px;
+  }
+  .port-item__title {
+    margin-bottom: 10px;
+  }
+  .port-items {
+    -webkit-box-shadow: 0px;
+            box-shadow: 0px;
+    padding-bottom: 0px;
   }
   .service-block {
     display: none;
@@ -2708,6 +2834,10 @@ h1 {
   background: #CAB063;
   margin-bottom: 60px;
   cursor: pointer;
+}
+
+.footer-button__portfolio {
+  background: linear-gradient(89.66deg, #834853 0%, #B9393A 58.82%, #D16739 100%);
 }
 
 .footer-button__service {
