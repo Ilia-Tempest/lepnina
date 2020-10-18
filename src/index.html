@@ -51,11 +51,11 @@
        <!-- /.header-two__text -->
      </div>
      <!-- /.header-two -->
-     <div class="header-three">
+     <div class="header-three" onclick="show_popap('modal-1')">
       ЗАДАТЬ ВОПРОС
      </div>
      <!-- /.header-three -->
-     <div class="header-four">
+     <div class="header-four" onclick="show_popap('modal-1')">
       ПОЛУЧИТЬ ОТВЕТ
      </div>
      <!-- /.header-four -->
@@ -184,7 +184,7 @@
 
 
     <div class="stage-one">
-      <div class="stage-title1">
+      <div onclick="show_popap('modal-1')" class="stage-title1">
         ЗАДАТЬ ВОПРОС
       </div>
       <!-- /.stage-title1 -->
@@ -431,7 +431,7 @@
       </div>
       <!-- /.dop-block -->
 
-      <div class="dop-button">
+      <div onclick="show_popap('modal-1')" class="dop-button">
         ПОЛУЧИТЬ ОТВЕТ
       </div>
       <!-- /.dop-button -->
@@ -553,13 +553,55 @@
     <!-- /.container -->
     <div class="footer-copy">
       Copyright © 2020
+      <div class="footer-polit">
+        <a href="politics.html" class="footer-polit__a">Политика конфиденциальности</a> 
+      </div>
+        <!-- /.footer-polit -->
     </div>
     <!-- /.footer-copy -->
   </footer>
   <!-- /.footer -->
 
+
+
+  <div class="overlay" id="modal-1">
+    <div class="flex-popap">
+      <div class="popap">
+        <span class="close_popap">
+          <img src="img/modal/close.svg" alt="">
+        </span>
+        <div class="overlay__title">Чтобы задать вопрос заполните форму</div>
+          <form class="overlay-form" action="form/mail.php" method="POST">
+            <input required  id="name" class="overlay__input" name="user_name" type="text" placeholder="Имя">
+            <input required  id="phone" class="overlay__input" name="user_phone" type="tel" placeholder="Телефон">
+            <input required  id="email" class="overlay__input" name="user_mail" type="email" placeholder="E-mail">
+           
+            <div class="mod__conf">
+          <input class="checkbox" type="checkbox"  id="personaldata"  
+     required> 
+                <div class="mod__input">
+                 
+              <label for="personaldata" class="mod__label" for="lab">Нажимая на кнопку, вы даете согласие на обработку персональных данных и соглашаетесь с
+                <a class="mod-a" href="politics.html">политикой конфиденциальности</a>
+              </label>
+             
+            </div>
+              
+            </div>
+
+
+
+            <button disabled id="submit" type="submit" class="overlay__button">
+              Отправить
+            </button>
+          </form>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/modal.js"></script>
 </body>
 </html>

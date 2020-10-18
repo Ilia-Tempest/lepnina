@@ -1,0 +1,178 @@
+.checkbox 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid #018BB2;
+  box-sizing: border-box;
+  padding: 14px;
+  cursor: pointer;
+  position: relative;
+
+.checkbox::before 
+  content: "✓";
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: translate(50%, 50%);
+  opacity: 0;
+  transition: .1s ease-in
+.checkbox:checked 
+  background: #018BB2;
+.checkbox:checked::before 
+  opacity: 1;
+  
+
+
+.overlay 
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6); /* затемнение фона */
+  display: none;
+  &__title
+   text-align: left
+   font-family: "Open Sans", sans-serif
+   font-style: normal;
+   font-weight: normal;
+   font-size: 50px;
+   line-height: 107.5%;
+   color: #000000;
+   margin-bottom: 50px
+   max-width: 535px
+  &__input
+    margin-top: 35px
+    width: 593px
+    border: 1px solid #018BB2
+    padding-top: 15px
+    padding-bottom: 15px
+    padding-left: 16px
+    outline: none
+    &:first-child
+      margin-top: 0px
+    &::placeholder
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 22px;
+      color: #018BB2;
+  &__button  
+     margin-top: 40px
+     background-color: #018BB2
+     color: #ffffff
+     font-size: 18px
+     width: 609px
+     height: 70px
+     font-family: ", Open Sans", sans-serif;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 35px;
+     line-height: 22px;
+     cursor: pointer
+     outline: none
+     border: none
+.overlay.active 
+  display: block;
+.overlay-form 
+  display: flex
+  flex-direction: column
+  align-items: center
+.overlay .flex-popap 
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.overlay .flex-popap .popap 
+  position: relative;
+  background-color: #fff;  /* цвет фона всплывающего блока */
+  padding: 60px
+  margin: 0 10px;
+ 
+  overflow: auto;
+
+.popap span
+  position: absolute
+  top: 60px
+  right: 60px
+ 
+  cursor: pointer
+.mod
+  &-check
+    border: 1px solid #018BB2
+  &-a
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    letter-spacing: -0.408px
+    color: #018BB2
+  &__input
+    display: flex
+
+    margin-left: 15px
+  &__conf
+    margin-top: 25px
+    font-size: 14px
+    display: flex
+    align-items: center
+  &__label
+    font-family: "Open Sans", sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 17px
+    line-height: 22px
+    letter-spacing: -0.408px
+    color: #000000
+    max-width: 570px
+
+@media (max-width: 768px)
+
+ .mod
+   &__input
+     margin-left: 10px
+   &-a
+     font-size: 12px
+   &__label
+     font-size: 12px;
+     line-height: 14px;
+     
+   &__conf
+     width: 90%
+ .popap span 
+   right: 16px
+   top: 16px
+ .overlay .flex-popap .popap
+   padding: 16px
+   padding-top: 50px
+   padding-bottom: 30px
+   overflow: auto
+ .overlay
+   &__button
+     width: 90%
+     font-size: 25px
+     margin-top: 30px
+     height: 55px
+ .mod
+    &__conf
+      font-size: 12px
+      margin-top: 30px
+ .overlay 
+   &__title
+     width: 90%
+     font-size: 25px
+     margin-bottom: 30px
+   &__input
+    margin-top: 30px
+    width: 90%
+
+ 
+    
+@media (max-width: 340px)
+  .overlay .flex-popap .popap
+    padding-top: 30px

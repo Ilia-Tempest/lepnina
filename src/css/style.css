@@ -352,6 +352,11 @@ img {
   max-width: 100%;
 }
 
+button:disabled,
+button[disabled] {
+  opacity: 0.3;
+}
+
 a {
   text-decoration: none;
 }
@@ -371,6 +376,26 @@ h1 {
 
 .section-port {
   margin-top: 50px;
+}
+
+.polit-title {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 130%;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.polit-text {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 124%;
+  color: #000000;
 }
 
 .port-texts {
@@ -791,6 +816,12 @@ h1 {
 }
 
 @media (max-width: 1030px) {
+  .polit-title {
+    font-size: 30px;
+  }
+  .polit-text {
+    font-size: 18px;
+  }
   .port-titless {
     text-align: left;
   }
@@ -917,6 +948,13 @@ h1 {
   }
   .section-service {
     margin-top: 30px;
+  }
+  .polit-title {
+    margin-top: 30px;
+    font-size: 25px;
+  }
+  .polit-text {
+    font-size: 18px;
   }
   .port-info__title {
     margin-bottom: 20px;
@@ -1917,6 +1955,7 @@ h1 {
   width: 90%;
   text-align: center;
   z-index: 2;
+  cursor: pointer;
 }
 
 .stage-one {
@@ -2803,6 +2842,25 @@ h1 {
   padding-top: 110px;
 }
 
+.footer-polit {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.footer-polit__a {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #C4C4C4;
+}
+
 .footer-all {
   padding-top: 150px;
 }
@@ -2951,6 +3009,9 @@ h1 {
 @media (max-width: 1100px) {
   .footer {
     padding-top: 50px;
+  }
+  .footer-polit__a {
+    font-size: 18px;
   }
   .footer-title {
     text-align: center;
@@ -3364,6 +3425,268 @@ h1 {
   }
   .about-roof__mobile {
     display: inline-block;
+  }
+}
+
+/*Стили для всплывающего окна*/
+.checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid #018BB2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox::before {
+  content: "✓";
+  color: white;
+  font-size: 26px;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  opacity: 0;
+  -webkit-transition: .1s ease-in;
+  transition: .1s ease-in;
+}
+
+.checkbox:checked {
+  background: #018BB2;
+}
+
+.checkbox:checked::before {
+  opacity: 1;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* затемнение фона */
+  display: none;
+}
+
+.overlay__title {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 107.5%;
+  color: #000000;
+  margin-bottom: 50px;
+  max-width: 535px;
+}
+
+.overlay__input {
+  margin-top: 35px;
+  width: 593px;
+  border: 1px solid #018BB2;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  outline: none;
+}
+
+.overlay__input:first-child {
+  margin-top: 0px;
+}
+
+.overlay__input::-webkit-input-placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #018BB2;
+}
+
+.overlay__input:-ms-input-placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #018BB2;
+}
+
+.overlay__input::-ms-input-placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #018BB2;
+}
+
+.overlay__input::placeholder {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  color: #018BB2;
+}
+
+.overlay__button {
+  margin-top: 40px;
+  background-color: #018BB2;
+  color: #ffffff;
+  font-size: 18px;
+  width: 609px;
+  height: 70px;
+  font-family: ", Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 22px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.overlay-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overlay .flex-popap {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overlay .flex-popap .popap {
+  position: relative;
+  background-color: #fff;
+  /* цвет фона всплывающего блока */
+  padding: 60px;
+  margin: 0 10px;
+  overflow: auto;
+}
+
+.popap span {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  cursor: pointer;
+}
+
+.mod-check {
+  border: 1px solid #018BB2;
+}
+
+.mod-a {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: -0.408px;
+  color: #018BB2;
+}
+
+.mod__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 15px;
+}
+
+.mod__conf {
+  margin-top: 25px;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mod__label {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #000000;
+  max-width: 570px;
+}
+
+@media (max-width: 768px) {
+  .mod__input {
+    margin-left: 10px;
+  }
+  .mod-a {
+    font-size: 12px;
+  }
+  .mod__label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .mod__conf {
+    width: 90%;
+  }
+  .popap span {
+    right: 16px;
+    top: 16px;
+  }
+  .overlay .flex-popap .popap {
+    padding: 16px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    overflow: auto;
+  }
+  .overlay__button {
+    width: 90%;
+    font-size: 25px;
+    margin-top: 30px;
+    height: 55px;
+  }
+  .mod__conf {
+    font-size: 12px;
+    margin-top: 30px;
+  }
+  .overlay__title {
+    width: 90%;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .overlay__input {
+    margin-top: 30px;
+    width: 90%;
+  }
+}
+
+@media (max-width: 340px) {
+  .overlay .flex-popap .popap {
+    padding-top: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */

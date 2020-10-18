@@ -30,4 +30,3 @@ $('.portfolio-block').slick({
   ]
 });
 
-
